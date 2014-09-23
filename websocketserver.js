@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-    io.emit('connection data', { clientid :  socket.id });
-    io.emit('request data', { requestid : socket.request.headers});
+    io.emit('client id :', { clientid :  socket.id });
+    io.emit('request data :', { requestid : socket.request.headers});
 });
 
     console.log("listening on 80");
