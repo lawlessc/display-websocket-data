@@ -20,11 +20,11 @@
   var socket = io.connect('http://localhost');
 
 
- socket.on('client id', function (data) {
+ socket.on('client id :', function (data) {
     $('#data').append($('<li>').text(JSON.stringify(data)));
   });
 
- socket.on('request data', function (data) {
+ socket.on('request data :', function (data) {
     $('#data').append($('<li>').text(JSON.stringify(data)));
   });
 
